@@ -86,3 +86,5 @@ flutter:
           weight: 600
         - asset: assets/fonts/TitilliumWeb-Regular.ttf
           weight: 400
+        - asset: assets/fonts/TitilliumWeb-Light.ttf
+          weight: 300
