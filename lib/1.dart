@@ -12,14 +12,19 @@ class FirstScreen extends StatelessWidget {
         home: Scaffold(
             body: Column(children: <Widget>[
           Container(
-              padding: EdgeInsets.fromLTRB(0, 48, 24, 0),
+              padding: EdgeInsets.fromLTRB(0, 29, 0, 0),
               alignment: Alignment.topRight,
-              child: Text('Skip',
-                  style: TextStyle(
-                    fontSize: 19,
-                    fontWeight: FontWeight.w600,
-                    color: Color(0xFF347AF0),
-                  ))),
+              child: FlatButton(
+                child: Text('Skip',
+                    style: TextStyle(
+                      fontSize: 19,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFF347AF0),
+                    )),
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, '/fifth');
+                },
+              )),
           Container(
               padding: EdgeInsets.fromLTRB(0, 24, 0, 0),
               child: Image.asset("assets/images/desktop.png")),

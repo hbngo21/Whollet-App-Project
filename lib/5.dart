@@ -6,17 +6,13 @@ class FifthScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(
-          fontFamily: 'TitilliumWeb',
-          scaffoldBackgroundColor: Color(0xFF347AF0)
-        ),
+            fontFamily: 'TitilliumWeb',
+            scaffoldBackgroundColor: Color(0xFF347AF0)),
         home: Scaffold(
             body: Column(children: <Widget>[
-              Container(
-                  padding: EdgeInsets.fromLTRB(0, 120, 0, 0),
-                  child: Image.asset("assets/images/logo.png")),
-
-
-
-            ])));
+          Container(
+              padding: EdgeInsets.fromLTRB(0, 120, 0, 0),
+              child: Image.asset("assets/images/logo.png")),
+        ])));
   }
 }
