@@ -62,7 +62,7 @@ class ForthScreen extends StatelessWidget {
                             side: BorderSide(width: 1, color: Color(0xFF347AF0))),
                         color: Colors.white,
                         onPressed: () {
-                          Navigator.popAndPushNamed(context, '/third');
+                          Navigator.popAndPushNamed(context, '/fifth');
                         },
                         child: Text(
                           "Next Step",
