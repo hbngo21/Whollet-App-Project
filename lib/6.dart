@@ -23,7 +23,8 @@ class SixthScreen extends StatelessWidget {
               backgroundColor: Color(0xFFFEDF1F9),
               elevation: 0,
             ),
-            body: Column(children: <Widget>[
+            body: SingleChildScrollView(
+              child: Column(children: <Widget>[
               /*Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.fromLTRB(0, 57, 0, 0),
@@ -47,8 +48,7 @@ class SixthScreen extends StatelessWidget {
                     borderRadius: BorderRadius.all(Radius.circular(20)),
                   ),
                 ),
-                SingleChildScrollView(
-                  child: Column(children: [
+             Column(children: [
                     Container(
                         padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                         child: TextField(
@@ -75,6 +75,7 @@ class SixthScreen extends StatelessWidget {
                             fontSize: 19,
                             fontWeight: FontWeight.w400,
                           ),
+                          obscureText: true,
                           decoration: InputDecoration(
                             hintText: "Password",
                             hintStyle: TextStyle(
@@ -149,8 +150,7 @@ class SixthScreen extends StatelessWidget {
                       ],
                     ),
                   ]),
-                )
-              ])
-            ])));
+                ])
+            ]))));
   }
 }
