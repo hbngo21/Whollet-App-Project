@@ -1,7 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SixthScreen extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  SixthScreen createState() => SixthScreen();
+}
+
+class SixthScreen extends State<HomePage> {
+  bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,6 +30,7 @@ class SixthScreen extends StatelessWidget {
               elevation: 0,
             ),
             body: SingleChildScrollView(
+              reverse: true,
               child: Column(children: <Widget>[
               /*Container(
                 alignment: Alignment.center,
@@ -83,9 +90,18 @@ class SixthScreen extends StatelessWidget {
                               fontSize: 19,
                               fontWeight: FontWeight.w400,
                             ),
+                            suffixIcon: IconButton(
+                              icon: Icon(
+                              _isObscure ? Icons.visibility : Icons.visibility_off,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  _isObscure = !_isObscure;
+                              }
+                              );}
                           ),
                         )
-                    ),
+                    ),),
                     Container(
                         alignment: Alignment.topRight,
                         //padding: EdgeInsets.fromLTRB(0, 11, 25, 0),

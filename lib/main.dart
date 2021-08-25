@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         '/third': (context) => ThirdScreen(),
         '/forth': (context) => ForthScreen(),
         '/fifth': (context) => FifthScreen(),
-        '/sixth': (context) => SixthScreen(),
+        '/sixth': (context) => HomePage(),
         '/seventh': (context) => SeventhScreen(),
         '/eighth': (context) => EighthScreen(),
         //'/ninth': (context) => NinthScreen(),*/
