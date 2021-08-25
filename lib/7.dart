@@ -30,6 +30,16 @@ class SeventhScreen extends StatelessWidget {
               elevation: 0,
             ),
             body: Column(children: <Widget>[
+              Container(
+                alignment: Alignment.center,
+                child: Text('Please enter your PIN to proceed',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Color(0xFF485068),
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    )),
+              ),
 
             ])));
   }
