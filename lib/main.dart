@@ -7,7 +7,7 @@ import '5.dart';
 import '6.dart';
 import '7.dart';
 import '8.dart';
-/*import '9.dart';*/
+import '9.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         '/sixth': (context) => HomePage(),
         '/seventh': (context) => SeventhScreen(),
         '/eighth': (context) => EighthScreen(),
-        //'/ninth': (context) => NinthScreen(),*/
+        '/ninth': (context) => NinthScreen(),
       },
     );
   }
