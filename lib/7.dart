@@ -15,7 +15,7 @@ class SeventhScreen extends StatelessWidget {
               centerTitle: true,
               leading: IconButton(
                 onPressed: (){
-                  Navigator.popAndPushNamed(context, 'sixth');
+                  Navigator.popAndPushNamed(context, '/sixth');
                 },
                 icon: Icon(Icons.arrow_back_ios, color: Color(0xFF0D1F3C),)
               ),

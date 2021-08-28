@@ -32,17 +32,6 @@ class SixthScreen extends State<HomePage> {
             body: SingleChildScrollView(
               reverse: true,
               child: Column(children: <Widget>[
-              /*Container(
-                alignment: Alignment.center,
-                padding: EdgeInsets.fromLTRB(0, 57, 0, 0),
-                child: Text('Welcome Back!',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Color(0xFF0D1F3C),
-                      fontSize: 26,
-                      fontWeight: FontWeight.w600,
-                    )),
-              ),*/
               Container(
                   padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                   child: Image.asset("assets/images/login.png")),
