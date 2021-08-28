@@ -60,14 +60,14 @@ class ForthScreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.all(Radius.circular(23)),
                         side: BorderSide(width: 1, color: Color(0xFF347AF0))),
-                    color: Colors.white,
+                    color: Color(0xFF347AF0),
                     onPressed: () {
                       Navigator.popAndPushNamed(context, '/fifth');
                     },
                     child: Text(
-                      "Next Step",
+                      "Let's Get Started",
                       style: TextStyle(
-                        color: Color(0xFF347AF0),
+                        color: Colors.white,
                         fontSize: 19,
                         fontWeight: FontWeight.w600,
                       ),
