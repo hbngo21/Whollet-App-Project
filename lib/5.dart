@@ -77,7 +77,7 @@ class FifthScreen extends StatelessWidget {
                       color: Colors.white,
                     )),
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, '/fifth');
+                  Navigator.popAndPushNamed(context, '/tenth');
                 },
               )
             ],

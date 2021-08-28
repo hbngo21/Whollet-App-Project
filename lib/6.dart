@@ -149,7 +149,7 @@ class SixthScreen extends State<HomePage> {
                                 color: Color(0xFF347AF0),
                               )),
                           onPressed: () {
-                            Navigator.popAndPushNamed(context, '/fifth');
+                            Navigator.popAndPushNamed(context, '/tenth');
                           },
                         )
                       ],
