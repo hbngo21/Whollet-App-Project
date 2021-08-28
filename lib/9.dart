@@ -55,7 +55,7 @@ class NinthScreen extends StatelessWidget {
                       ),
                       color: Color(0xFF347AF0),
                       onPressed: () {
-                        Navigator.popAndPushNamed(context, '/tenth');
+                        Navigator.popAndPushNamed(context, '/sixth');
                       },
                       child: Text(
                         "Back to Login",
