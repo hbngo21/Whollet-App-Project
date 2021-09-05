@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomePage1 extends StatefulWidget {
+class SignUp extends StatefulWidget {
   @override
   TenthScreen createState() => TenthScreen();
 }
 
-class TenthScreen extends State<HomePage1> {
+class TenthScreen extends State<SignUp> {
   bool _isObscure = true;
   @override
   Widget build(BuildContext context) {
@@ -24,8 +24,7 @@ class TenthScreen extends State<HomePage1> {
                       color: Color(0xFF0D1F3C),
                       fontSize: 26,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'TitilliumWeb'
-                  )),
+                      fontFamily: 'TitilliumWeb')),
               backgroundColor: Color(0xFFFEDF1F9),
               elevation: 0,
             ),
@@ -61,8 +60,7 @@ class TenthScreen extends State<HomePage1> {
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                          )
-                      ),
+                          )),
                       Container(
                           padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                           child: TextField(
@@ -79,8 +77,7 @@ class TenthScreen extends State<HomePage1> {
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                          )
-                      ),
+                          )),
                       Container(
                           padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                           child: TextField(
@@ -97,8 +94,7 @@ class TenthScreen extends State<HomePage1> {
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                          )
-                      ),
+                          )),
                       Container(
                         padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                         child: TextField(
@@ -117,16 +113,17 @@ class TenthScreen extends State<HomePage1> {
                               ),
                               suffixIcon: IconButton(
                                   icon: Icon(
-                                    _isObscure ? Icons.visibility : Icons.visibility_off,
+                                    _isObscure
+                                        ? Icons.visibility
+                                        : Icons.visibility_off,
                                   ),
                                   onPressed: () {
                                     setState(() {
                                       _isObscure = !_isObscure;
-                                    }
-                                    );}
-                              ),
-                            )
-                        ),),
+                                    });
+                                  }),
+                            )),
+                      ),
                       Container(
                         padding: EdgeInsets.fromLTRB(0, 35, 0, 0),
                         child: SizedBox(
@@ -134,11 +131,13 @@ class TenthScreen extends State<HomePage1> {
                             height: 46,
                             child: RaisedButton(
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.all(Radius.circular(23)),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(23)),
                               ),
                               color: Color(0xFF347AF0),
                               onPressed: () {
-                                Navigator.popAndPushNamed(context, '/eleventh');
+                                Navigator.popAndPushNamed(
+                                    context, '/CreatePin');
                               },
                               child: Text(
                                 "Let's Get Started",
@@ -170,7 +169,7 @@ class TenthScreen extends State<HomePage1> {
                                   color: Color(0xFF347AF0),
                                 )),
                             onPressed: () {
-                              Navigator.popAndPushNamed(context, '/sixth');
+                              Navigator.popAndPushNamed(context, '/LogIn');
                             },
                           )
                         ],

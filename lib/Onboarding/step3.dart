@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ThirdScreen extends StatelessWidget {
+class OnboardingStep3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,7 +22,7 @@ class ThirdScreen extends StatelessWidget {
                       color: Color(0xFF347AF0),
                     )),
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, '/fifth');
+                  Navigator.popAndPushNamed(context, '/WelcomeScreen');
                 },
               )),
           Container(
@@ -41,7 +41,9 @@ class ThirdScreen extends StatelessWidget {
               ),
             ),
             Column(children: [
+              Container(child: Image.asset("assets/images/step3.png")),
               Container(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                 alignment: Alignment.center,
                 child: Text('Receive and Send\nMoney to Friends!',
                     textAlign: TextAlign.center,
@@ -76,7 +78,7 @@ class ThirdScreen extends StatelessWidget {
                         side: BorderSide(width: 1, color: Color(0xFF347AF0))),
                     color: Colors.white,
                     onPressed: () {
-                      Navigator.popAndPushNamed(context, '/forth');
+                      Navigator.popAndPushNamed(context, '/OnboardingStep4');
                     },
                     child: Text(
                       "Next Step",

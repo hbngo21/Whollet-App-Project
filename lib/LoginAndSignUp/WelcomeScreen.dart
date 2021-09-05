@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FifthScreen extends StatelessWidget {
+class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -44,7 +44,7 @@ class FifthScreen extends StatelessWidget {
                   ),
                   color: Colors.white,
                   onPressed: () {
-                    Navigator.popAndPushNamed(context, '/sixth');
+                    Navigator.popAndPushNamed(context, '/Login');
                   },
                   child: Text(
                     "Sign in",
@@ -77,7 +77,7 @@ class FifthScreen extends StatelessWidget {
                       color: Colors.white,
                     )),
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, '/tenth');
+                  Navigator.popAndPushNamed(context, '/SignUp');
                 },
               )
             ],

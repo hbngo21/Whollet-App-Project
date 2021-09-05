@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class EighthScreen extends StatelessWidget {
+class ForgotPassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +15,7 @@ class EighthScreen extends StatelessWidget {
               centerTitle: true,
               leading: IconButton(
                   onPressed: () {
-                    Navigator.popAndPushNamed(context, '/sixth');
+                    Navigator.popAndPushNamed(context, '/Login');
                   },
                   icon: Icon(
                     Icons.arrow_back_ios,
@@ -73,8 +73,7 @@ class EighthScreen extends StatelessWidget {
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
-                          )
-                      ),
+                          )),
                       Container(
                         padding: EdgeInsets.fromLTRB(0, 53, 0, 0),
                         child: SizedBox(
@@ -82,11 +81,13 @@ class EighthScreen extends StatelessWidget {
                             height: 46,
                             child: RaisedButton(
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.all(Radius.circular(23)),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(23)),
                               ),
                               color: Color(0xFF347AF0),
                               onPressed: () {
-                                Navigator.popAndPushNamed(context, '/ninth');
+                                Navigator.popAndPushNamed(
+                                    context, '/CheckYourEmail');
                               },
                               child: Text(
                                 "Reset Password",

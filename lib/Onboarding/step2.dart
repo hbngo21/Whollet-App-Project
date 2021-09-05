@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FirstScreen extends StatelessWidget {
+class OnboardingStep2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,12 +22,12 @@ class FirstScreen extends StatelessWidget {
                       color: Color(0xFF347AF0),
                     )),
                 onPressed: () {
-                  Navigator.popAndPushNamed(context, '/fifth');
+                  Navigator.popAndPushNamed(context, '/WelcomeScreen');
                 },
               )),
           Container(
-              padding: EdgeInsets.fromLTRB(0, 24, 0, 0),
-              child: Image.asset("assets/images/desktop.png")),
+              padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
+              child: Image.asset("assets/images/idea.png")),
           Container(
             height: 24,
           ),
@@ -41,9 +41,11 @@ class FirstScreen extends StatelessWidget {
               ),
             ),
             Column(children: [
+              Container(child: Image.asset("assets/images/step2.png")),
               Container(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                 alignment: Alignment.center,
-                child: Text('Welcome to\n Whollet',
+                child: Text('Nice and Tidy Crypto\nPortfolio!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color(0xFF0D1F3C),
@@ -56,7 +58,7 @@ class FirstScreen extends StatelessWidget {
                 padding: EdgeInsets.fromLTRB(0, 11, 0, 0),
                 alignment: Alignment.center,
                 child: Text(
-                    'Manage all your crypto assets! It’s simple\n and easy! ',
+                    'Keep BTC, ETH, XRP, and many other\n ERC-20 based tokens.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Color(0xFF485068),
@@ -76,7 +78,7 @@ class FirstScreen extends StatelessWidget {
                         side: BorderSide(width: 1, color: Color(0xFF347AF0))),
                     color: Colors.white,
                     onPressed: () {
-                      Navigator.pushNamed(context, '/second');
+                      Navigator.popAndPushNamed(context, '/OnboardingStep3');
                     },
                     child: Text(
                       "Next Step",

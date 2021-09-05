@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class NinthScreen extends StatelessWidget {
+class CheckYourEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,25 +14,27 @@ class NinthScreen extends StatelessWidget {
               toolbarHeight: 70,
               centerTitle: true,
               leading: IconButton(
-                  onPressed: (){
-                    Navigator.popAndPushNamed(context, '/eighth');
+                  onPressed: () {
+                    Navigator.popAndPushNamed(context, '/ForgotPassword');
                   },
-                  icon: Icon(Icons.arrow_back_ios, color: Color(0xFF0D1F3C),)
-              ),
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    color: Color(0xFF0D1F3C),
+                  )),
               title: Text('Check Your Email',
                   style: TextStyle(
                       color: Color(0xFF0D1F3C),
                       fontSize: 26,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'TitilliumWeb'
-                  )),
+                      fontFamily: 'TitilliumWeb')),
               backgroundColor: Color(0xFFFEDF1F9),
               elevation: 0,
             ),
             body: Column(children: <Widget>[
               Container(
                 alignment: Alignment.center,
-                child: Text('Follow a password recovery instructions we have\n'
+                child: Text(
+                    'Follow a password recovery instructions we have\n'
                     ' just sent to your email address ',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -55,7 +57,7 @@ class NinthScreen extends StatelessWidget {
                       ),
                       color: Color(0xFF347AF0),
                       onPressed: () {
-                        Navigator.popAndPushNamed(context, '/sixth');
+                        Navigator.popAndPushNamed(context, '/Login');
                       },
                       child: Text(
                         "Back to Login",
@@ -67,7 +69,6 @@ class NinthScreen extends StatelessWidget {
                       ),
                     )),
               ),
-
             ])));
   }
 }
