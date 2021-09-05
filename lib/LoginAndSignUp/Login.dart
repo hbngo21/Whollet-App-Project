@@ -104,7 +104,7 @@ class SixthScreen extends State<Login> {
                             ),
                             onPressed: () {
                               Navigator.popAndPushNamed(
-                                  context, '/ForgotPasswword');
+                                  context, '/ForgotPassword');
                             },
                           )),
                       Container(

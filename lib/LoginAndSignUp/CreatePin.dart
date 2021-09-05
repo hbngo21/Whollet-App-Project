@@ -223,7 +223,7 @@ class _CreatePinState extends State<CreatePin> {
                 ),
               ),
             Container(
-              padding: EdgeInsets.only(left: 30, right: 30, bottom: 15),
+              padding: EdgeInsets.only(left: 30, right: 30, bottom: 0),
               child: Column(
                 children: [
                   Row(
